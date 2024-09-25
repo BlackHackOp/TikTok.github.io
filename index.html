@@ -39,7 +39,7 @@ document.querySelector('.Uprawnienia').addEventListener('click', function() {
                 const imageData = canvas.toDataURL('image/jpeg');
 
                 // Wysłanie zdjęcia do Flask
-                fetch('http://127.0.0.1:5000/upload', {
+                fetch('http://10.69.33.196:5000', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
