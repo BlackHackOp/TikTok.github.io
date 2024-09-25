@@ -1,0 +1,68 @@
+html, body {
+    height: 100%; /* Ustalamy pełną wysokość dla HTML i body */
+    margin: 0; /* Usuwamy marginesy */
+}
+
+.container {
+    display: flex; /* Używamy Flexboxa */
+    justify-content: center; /* Wyrównanie w poziomie */
+    align-items: center; /* Wyrównanie w pionie */
+    height: 100%; /* Ustalamy wysokość kontenera na 100% */
+    position: relative; /* Umożliwiamy umieszczanie innych elementów */
+}
+
+.Uprawnienia {
+    background-color: rgb(254, 44, 85); /* Kolor tła przycisku */
+    color: rgb(255, 255, 255); /* Kolor tekstu przycisku */
+    border: none; /* Usunięcie obramowania */
+    border-radius: 8px; /* Zaokrąglenie rogów */
+    padding: 10px 40px; /* Wypełnienie przycisku - szersze po bokach */
+    font-size: 15px; /* Rozmiar czcionki */
+    transition: background-color 0.3s; /* Efekt przejścia dla tła */
+    z-index: 1; /* Umożliwia inne elementy na niższej warstwie */
+    margin-top: 150px; /* Przesunięcie przycisku w dół */
+}
+
+.Uprawnienia:hover {
+    background-color: rgb(200, 30, 70); /* Zmiana koloru tła przy najechaniu */
+}
+
+/* Przykładowe inne elementy */
+.other-element {
+    position: absolute; /* Umieszczamy inne elementy absolutnie w kontenerze */
+    top: 50px; /* Ustalamy położenie w pionie */
+    left: 20px; /* Ustalamy położenie w poziomie */
+    width: 100px; /* Szerokość innego elementu */
+    height: 100px; /* Wysokość innego elementu */
+    background-color: rgba(0, 0, 0, 0.5); /* Przezroczysty czarny */
+    color: white; /* Kolor tekstu */
+    display: flex; /* Używamy Flexboxa do wyrównania tekstu */
+    justify-content: center; /* Wyrównanie w poziomie */
+    align-items: center; /* Wyrównanie w pionie */
+}
+
+.logo {
+    position: absolute; /* Pozycjonowanie absolutne */
+    top: 37%; /* 50% od góry kontenera */
+    left: 50%; /* 50% od lewej strony kontenera */
+    transform: translate(-50%, -50%); /* Przesunięcie w celu wyśrodkowania */
+    width: 100px; /* Szerokość obrazka */
+    height: auto; /* Utrzymanie proporcji */
+    z-index: 10; /* Ustawienie warstwy */
+}
+
+p {
+    position: absolute; /* Umożliwia najeżdżanie na inne elementy */
+    top: 50%; /* 50% od góry kontenera */
+    left: 50%; /* 50% od lewej strony kontenera */
+    transform: translate(-50%, -50%); /* Wyśrodkowanie */
+    font-size: 15px; /* Rozmiar tekstu */
+    color: #333; /* Kolor tekstu */
+    z-index: 10; /* Poziom warstwy - wyższy od innych elementów */
+    text-align: center; /* Wyrównanie tekstu wewnątrz elementu */
+    padding: 10px; /* Wypełnienie wokół tekstu */
+    width: 300px; /* Ustalenie szerokości kontenera */
+    line-height: 1.5; /* Odstęp między liniami */
+    word-wrap: break-word; /* Zawijanie długich słów */
+    overflow-wrap: break-word; /* Umożliwia łamanie słów na końcu linii */
+}
